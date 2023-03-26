@@ -4,7 +4,28 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-       <div class="gridContainer"></div> 
+        <h1>Etch a Sketch</h1>
+        <div class="splitter">
+            <div class="gridSession">
+                <div class="gridContainer"></div>
+            </div>
+            <div class="controlContainer">
+             <label>Select a size</label>
+            <select id="sizeSelector" onchange="changeSize()">
+             <option value="8">8*8</option>
+             <option value="16">16*16</option>
+             <option value="32">32*32</option>
+             <option value="64" selected="selected">64*64</option>
+             <option value="128">128*128</option>
+            </select>
+            <br>
+            <label>Clear Content</label>
+            <button onclick="clearGrid()">Clear</button>
+            <br>
+            <label>Pick Color</label>
+            <input id="colorPicker" type="color" onchange="changeColor()">
+            </div>
+        </div>
        <script src="grid.js"></script>
     </body>
 </html>

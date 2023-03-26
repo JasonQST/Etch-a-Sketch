@@ -1,6 +1,6 @@
 .gridDiv{
     flex: 1;
-    background-color: aquamarine;
+    background-color: white;
     margin: 0;
     padding: 0;
 }
@@ -14,13 +14,52 @@
 
 .gridContainer{
     display: flex;
+    flex:1;
     flex-direction: column;
     border-style: solid;
     width: 500px;
     height: 500px;
 }
 
+.gridSession{
+    flex:1;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.gridContainer{
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.controlContainer{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: min-content;
+    margin-right: auto;
+    margin-left: 100PX;
+}
+
+.controlContainer select{
+    width: min-content;
+}
+
+.controlContainer button{
+    width: min-content;
+    background-color: white;
+}
+
 body{
+    background-color: whitesmoke;
     margin: 0;
     padding: 0;
+}
+
+body h1 {
+    text-align: center;
+}
+
+.splitter{
+    display: flex;
 }
