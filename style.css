@@ -1,15 +1,23 @@
 .gridDiv{
-    width: 50px;
-    height: 50px;
+    flex: 1;
     background-color: aquamarine;
-    display: flex;
     margin: 0;
     padding: 0;
 }
 
 .rowDiv{
     display: flex;
-    vertical-align: bottom;
+    flex:1;
+    width: auto;
+    height: auto;
+}
+
+.gridContainer{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    width: 500px;
+    height: 500px;
 }
 
 body{
