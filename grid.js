@@ -9,9 +9,9 @@ for(k=0;k<16;k++){
     let thisRow = document.querySelector('#' + CSS.escape(thisRowID));
     for(i=0;i<16;i++){
         console.log(i);
-        const gridSpan = document.createElement('Span');
-        gridSpan.classList.add('gridSpan');
-        gridSpan.setAttribute('id', k.toString() + i.toString())
-        thisRow.appendChild(gridSpan);
+        const gridDiv = document.createElement('Div');
+        gridDiv.classList.add('gridDiv');
+        gridDiv.setAttribute('id', k.toString() + i.toString())
+        thisRow.appendChild(gridDiv);
     }
 }
